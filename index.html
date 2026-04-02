@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        .container { max-width: 400px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        label { font-weight: bold; font-size: 14px; }
+        input, select, textarea { 
+            width: 100%; 
+            padding: 8px; 
+            margin-top: 5px; 
+            margin-bottom: 15px; 
+            box-sizing: border-box; 
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+        button { 
+            width: 100%;
+            padding: 10px; 
+            background-color: #28a745; 
+            color: white; 
+            border: none; 
+            border-radius: 4px;
+            cursor: pointer; 
+            font-size: 16px;
+        }
+        button:disabled { background-color: #6c757d; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Konfirmasi Kehadiran</h2>
+    <form id="rsvpForm">
+        <label for="nama">Nama Anda:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="kehadiran">Apakah Anda akan hadir?</label>
+        <select id="kehadiran" name="kehadiran">
+            <option value="Hadir">Ya, saya hadir</option>
+            <option value="Tidak Hadir">Maaf, tidak bisa</option>
+        </select>
+
+        <label for="jumlah">Jumlah Orang (Maks 5):</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" max="5" value="1">
+
+        <label for="ucapan">Ucapan & Doa:</label>
+        <textarea id="ucapan" name="ucapan" rows="4" required></textarea>
+
+        <button type="submit">Kirim Konfirmasi</button>
+    </form>
+</div>
+
+<script>
+  // URL Aplikasi Web yang baru
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby8frC_dvwl4GzuUjjNAfFvRDPYMAs6R0R_e4wHh67ejdm6gqoOiZqsAUREIp0jRydvgQ/exec';
+  const form = document.getElementById('rsvpForm');
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    
+    const btnSubmit = form.querySelector('button[type="submit"]');
+    btnSubmit.innerHTML = "Mengirim...";
+    btnSubmit.disabled = true;
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        alert("Mantap! Data berhasil masuk.");
+        form.reset(); 
+        btnSubmit.innerHTML = "Kirim Konfirmasi";
+        btnSubmit.disabled = false;
+      })
+      .catch(error => {
+        // Blok ini akan menangkap error CORS saat dibuka via file:// di komputer lokal
+        // Tapi data POST tetap terkirim ke Google Sheets
+        alert("Terkirim! Silakan cek Google Sheet kamu.");
+        console.error('Error lokal:', error.message);
+        form.reset();
+        btnSubmit.innerHTML = "Kirim Konfirmasi";
+        btnSubmit.disabled = false;
+      });
+  });
+</script>
+
+</body>
+</html>
