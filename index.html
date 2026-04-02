@@ -1,89 +1,279 @@
-<!DOCTYPE html>
-<html lang="id">
+<!doctype html>
+<html class="no-js" lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undangan Pernikahan</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 30px; }
-        .container { max-width: 400px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
-        label { font-weight: bold; font-size: 14px; }
-        input, select, textarea { 
-            width: 100%; 
-            padding: 8px; 
-            margin-top: 5px; 
-            margin-bottom: 15px; 
-            box-sizing: border-box; 
-            border: 1px solid #aaa;
-            border-radius: 4px;
-        }
-        button { 
-            width: 100%;
-            padding: 10px; 
-            background-color: #28a745; 
-            color: white; 
-            border: none; 
-            border-radius: 4px;
-            cursor: pointer; 
-            font-size: 16px;
-        }
-        button:disabled { background-color: #6c757d; cursor: not-allowed; }
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Undangan Pernikahan Agus & Putri</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-<div class="container">
-    <h2>Konfirmasi Kehadiran</h2>
-    <form id="rsvpForm">
-        <label for="nama">Nama Anda:</label>
-        <input type="text" id="nama" name="nama" required>
-
-        <label for="kehadiran">Apakah Anda akan hadir?</label>
-        <select id="kehadiran" name="kehadiran">
-            <option value="Hadir">Ya, saya hadir</option>
-            <option value="Tidak Hadir">Maaf, tidak bisa</option>
-        </select>
-
-        <label for="jumlah">Jumlah Orang (Maks 5):</label>
-        <input type="number" id="jumlah" name="jumlah" min="1" max="5" value="1">
-
-        <label for="ucapan">Ucapan & Doa:</label>
-        <textarea id="ucapan" name="ucapan" rows="4" required></textarea>
-
-        <button type="submit">Kirim Konfirmasi</button>
-    </form>
+<div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+                <img src="assets/img/logo/logo.png" alt="">
+            </div>
+        </div>
+    </div>
 </div>
+<header>
+    <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>                              
+                                    <ul id="navigation">                                                          
+                                        <li><a href="index.html"> Home</a></li>
+                                        <li><a href="#cerita">Cerita Kami</a></li>
+                                        <li><a href="#galeri">Galeri</a></li>
+                                        <li><a href="#rsvp">Kehadiran (RSVP)</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div> 
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </header>
+<main>
+    <div class="slider-area">
+        <div class="slider-active">
+            <div class="single-slider slider-height hero-overly d-flex align-items-center">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-xl-8 col-lg-6 col-md-8 ">
+                            <div class="hero__caption">
+                                <span data-animation="fadeInLeft" data-delay=".3s">Segera Menikah</span>
+                                <h1 data-animation="fadeInLeft" data-delay=".5s" data-duration="2000ms">Agus<strong> & </strong> Putri</h1>
+                                <p data-animation="fadeInLeft" data-delay=".9s">Mohon Doa Restu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cerita" class="Our-story-area story-padding">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-7 col-lg-8">
+                    <div class="section-tittle text-center mb-70">
+                        <h2>Kisah Cinta Kami​</h2>
+                        <img src="assets/img/gallery/tittle_img.png" alt="">
+                        <p>Kisah singkat perjalanan kami hingga akhirnya memutuskan untuk melangkah ke jenjang pernikahan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="story-caption background-img mb-40" style="background-image: url(assets/img/gallery/story2.jpg);">
+                        <div class="story-details">
+                            <h4>Pertemuan Pertama</h4>
+                            <p>Di sinilah semuanya bermula. Sebuah pertemuan sederhana yang mengubah segalanya.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="story-img">
+                        <img  class="story2" src="assets/img/gallery/story1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="galeri" class="gallery-area section-padding4">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-tittle text-center mb-70">
+                        <h2>Galeri Foto</h2>
+                        <img src="assets/img/gallery/tittle_img.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-gallery mb-30">
+                        <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery1.png);"></div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="single-gallery mb-30">
+                        <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery2.png);"></div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="single-gallery mb-30">
+                        <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery3.png);"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-gallery mb-30">
+                        <div class="gallery-img" style="background-image: url(assets/img/gallery/gallery4.png);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="rsvp" class="contact-form section-padding30 fix">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="form-wrapper">
+                        <form id="rsvpForm">
+                            <div class="row ">
+                                <div class="col-lg-12">
+                                    <div class="section-tittle tittle-form text-center mb-30">
+                                        <h2>Konfirmasi Kehadiran</h2>
+                                        <img src="assets/img/gallery/tittle_img2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-box mb-30">
+                                        <input type="text" name="nama" placeholder="Nama Lengkap Anda" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mb-30">
+                                    <div class="select-itms">
+                                        <select name="kehadiran" required>
+                                            <option value="" disabled selected>Apakah Anda akan hadir?</option>
+                                            <option value="Hadir">Ya, saya akan hadir</option>
+                                            <option value="Tidak Hadir">Maaf, saya tidak bisa hadir</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mb-30">
+                                    <div class="select-itms">
+                                        <select name="jumlah" required>
+                                            <option value="" disabled selected>Jumlah Orang yang Hadir</option>
+                                            <option value="1">1 Orang</option>
+                                            <option value="2">2 Orang</option>
+                                            <option value="3">3 Orang</option>
+                                            <option value="4">4 Orang</option>
+                                            <option value="5">5 Orang</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-box message-icon mb-30">
+                                        <textarea name="ucapan" id="ucapan" placeholder="Tuliskan ucapan & doa restu di sini..." required></textarea>
+                                    </div>
+                                    <div class="submit-info">
+                                        <button class="btn" type="submit">Kirim Konfirmasi</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="shape-inner-flower">
+                            <img src="assets/img/gallery/shape2.png" class="shpe2" alt="">
+                        </div>
+                        <div class="shape-outer-flower">
+                            <img src="assets/img/flower/from-top.png" class="outer-top" alt="">
+                            <img src="assets/img/flower/from-bottom.png" class="outer-bottom" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+<footer>
+    <div class="footer-main" data-background="assets/img/gallery/section_bg4.png">
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="footer-border">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-xl-12 ">
+                                <div class="footer-copy-right text-center">
+                                    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Template by Colorlib | Customized for Agus & Putri</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
-<script>
-  // URL Aplikasi Web yang baru
-  const scriptURL = 'https://script.google.com/macros/s/AKfycby8frC_dvwl4GzuUjjNAfFvRDPYMAs6R0R_e4wHh67ejdm6gqoOiZqsAUREIp0jRydvgQ/exec';
-  const form = document.getElementById('rsvpForm');
-  
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    
-    const btnSubmit = form.querySelector('button[type="submit"]');
-    btnSubmit.innerHTML = "Mengirim...";
-    btnSubmit.disabled = true;
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/gijgo.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <script src="./assets/js/jquery.scrollUp.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
 
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        alert("Mantap! Data berhasil masuk.");
-        form.reset(); 
-        btnSubmit.innerHTML = "Kirim Konfirmasi";
-        btnSubmit.disabled = false;
-      })
-      .catch(error => {
-        // Blok ini akan menangkap error CORS saat dibuka via file:// di komputer lokal
-        // Tapi data POST tetap terkirim ke Google Sheets
-        alert("Terkirim! Silakan cek Google Sheet kamu.");
-        console.error('Error lokal:', error.message);
-        form.reset();
-        btnSubmit.innerHTML = "Kirim Konfirmasi";
-        btnSubmit.disabled = false;
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycby8frC_dvwl4GzuUjjNAfFvRDPYMAs6R0R_e4wHh67ejdm6gqoOiZqsAUREIp0jRydvgQ/exec';
+      const form = document.getElementById('rsvpForm');
+      
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        
+        const btnSubmit = form.querySelector('button[type="submit"]');
+        const originalText = btnSubmit.innerHTML;
+        btnSubmit.innerHTML = "Mengirim...";
+        btnSubmit.disabled = true;
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            alert("Terima kasih! Konfirmasi kehadiran Anda sudah terkirim.");
+            form.reset(); 
+            // Reset dropdown nice-select khusus bawaan template
+            $('select').niceSelect('update');
+            btnSubmit.innerHTML = originalText;
+            btnSubmit.disabled = false;
+          })
+          .catch(error => {
+            alert("Terkirim! (Silakan cek Google Sheet kamu)");
+            console.error('Error!', error.message);
+            form.reset();
+            $('select').niceSelect('update');
+            btnSubmit.innerHTML = originalText;
+            btnSubmit.disabled = false;
+          });
       });
-  });
-</script>
-
+    </script>
+    
 </body>
 </html>
